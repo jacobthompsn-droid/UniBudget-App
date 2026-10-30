@@ -35,13 +35,12 @@ Then open http://localhost:8000.
 
 ## Deploy (Cloudflare Pages)
 
-The site is deployed on Cloudflare Pages from the `main` branch.
+Every push to `main` deploys to Cloudflare Pages through GitHub Actions (`.github/workflows/deploy.yml`), as the project `unibudgetsavingsapp` at https://unibudgetsavingsapp.pages.dev. The first run creates the Pages project.
 
-- Framework preset: None
-- Build command: (leave empty)
-- Build output directory: `/`
+One-time setup, in the repo's Settings > Secrets and variables > Actions:
 
-Every push to `main` deploys automatically. When you change any app file, bump `VERSION` in `sw.js` so installed copies pick up the update.
+- `CLOUDFLARE_API_TOKEN`: a Cloudflare API token with the "Cloudflare Pages: Edit" permission
+- `CLOUDFLARE_ACCOUNT_ID`: your Cloudflare account ID When you change any app file, bump `VERSION` in `sw.js` so installed copies pick up the update.
 
 ## Updating deals
 
