@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>UniBudget: Student Budget and Savings</title>
+  <meta name="description" content="UniBudget is a budgeting app made for college students. Plan a weekly budget, log spending in seconds, unlock local student discounts, and track savings goals, all in one simple app.">
+  <meta name="theme-color" content="#1F8A5B">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="UniBudget">
+  <meta property="og:title" content="UniBudget">
+  <meta property="og:description" content="Plan a weekly budget, log spending in seconds, unlock student discounts, and track savings goals.">
+  <meta property="og:image" content="/icons/og-image.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="icon" href="/icons/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/icons/icon-192.png" sizes="192x192" type="image/png">
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+  <div class="shell" id="shell">
+    <header class="topbar" id="topbar"></header>
+    <main class="content" id="content" tabindex="-1"></main>
+    <button class="fab" id="fab" type="button" aria-label="Add expense" hidden>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+    </button>
+    <nav class="tabbar" id="tabbar" aria-label="Main"></nav>
+    <div class="backdrop" id="backdrop" hidden></div>
+    <section class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetTitle" hidden></section>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </div>
+  <noscript><p class="noscript">UniBudget needs JavaScript turned on to run.</p></noscript>
+  <script src="/js/data.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>
