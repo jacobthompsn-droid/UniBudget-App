@@ -40,7 +40,9 @@ Every push to `main` deploys to Cloudflare Pages through GitHub Actions (`.githu
 One-time setup, in the repo's Settings > Secrets and variables > Actions:
 
 - `CLOUDFLARE_API_TOKEN`: a Cloudflare API token with the "Cloudflare Pages: Edit" permission
-- `CLOUDFLARE_ACCOUNT_ID`: your Cloudflare account ID When you change any app file, bump `VERSION` in `sw.js` so installed copies pick up the update.
+- `CLOUDFLARE_ACCOUNT_ID`: your Cloudflare account ID
+
+When you change any app file, bump `VERSION` in `sw.js` so installed copies pick up the update.
 
 ## Updating deals
 
